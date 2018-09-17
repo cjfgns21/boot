@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+
+        <title>부트스트랩의 기본 색상 사용하기</title>
+
+
+        <!-- 부트스트랩 로드 시 부트스트랩 CSS 파일을 가장 먼저 로딩하고 -->
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+
+        <!-- JS파일 중 jQuery를 가장 먼저 로딩하고 POPPER 와 BootStrap 파일을 순서대로 로드한다. -->
+        <!-- popper과 bootstrap는 모두 jquery를 사용하여 각종 기능을 수행하기 때문에 반드시
+        jquery가 가장 먼저 로드되어야 한다. -->
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <style>
+            .row > div {
+                border: 1px dashed black; 
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <!-- 부트스트랩에는 미리 지정된 기본 색상이 존재함 -->
+            <!-- primary(파랑), secondary(밝은 회색), success(녹색), info(청록색), warning(노란색), danger(빨강색), white(흰색), dark(진한회색), light(흰색)) -->
+            <!-- 이러한 기본 색상을 가지고 있어서 거의 모든 태그에 사용함 -->
+
+            <article>
+                <!-- 글자색은 부트스트랩 기본 색에 text를 입력하여 사용 -->
+                <!-- text-muted, text-primary, text-secondary, text-success, text-info, text-warning, text-danger, text-white, text-dark,text-body, text-light -->
+                <h3 class="text-muted">이 글자는 muted 사용</h3>
+                <h3 class="text-primary">이 글자는 text-primary 사용</h3>
+                <h3 class="text-secondary">이 글자는 text-secondary 사용</h3>
+                <h3 class="text-success">이 글자는 text-success 사용</h3>
+                <h3 class="text-info">이 글자는 text-info 사용</h3>
+                <h3 class="text-warning">이 글자는 text-warning 사용</h3>
+                <h3 class="text-danger">이 글자는 text-danger 사용</h3>
+                <h3 class="text-dark">이 글자는 text-dark 사용</h3>
+                <h3 class="text-white bg-dark">이 글자는 text-white 사용</h3>
+                <h3 class="text-light bg-dark">이 글자 text-light 사용</h3>
+                <h3 class="text-body">이 글자는 text-body 사용</h3>
+                
+            </article>
+            <article>
+                <!-- a 태그에 text 컬러를 사용하여 링크 부분에 색상을 변경할 수 있음 -->
+                <a href="#" class="text-muted">muted 링크</a>
+                <a href="#" class="text-primary">primary 링크</a>
+                <a href="#" class="text-secondary">text-secondary 링크</a>
+                <a href="#" class="text-success">text-success 링크</a>
+                <a href="#" class="text-info">text-info 링크</a>
+                <a href="#" class="text-warning">text-warning 링크</a>
+                <a href="#" class="text-danger">text-danger 링크</a>
+                <a href="#" class="text-dark">text-dark 링크</a>
+                <a href="#" class="text-white bg-dark">text-white 링크</a>
+                <a href="#" class="text-light bg-dark">text-light 링크</a>
+                <a href="#" class="text-body">text-body 링크</a>
+            </article><hr>
+            <article>
+                <!-- 배경색에도 미리 지정된 단어를 이용하여 색상을 변경할 수 있음 -->
+                <!-- bg-primary(파랑), bg-secondary(밝은 회색), bg-success(녹색), bg-info(청록색), bg-warning(노란색), bg-danger(빨강색), bg-white(흰색), bg-dark(진한회색), bg-light(흰색)) -->
+                <h3 class="bg-primary">배경색 bg-primary</h3>
+                <h3 class="bg-secondary">배경색 bg-secondary</h3>
+                <h3 class="bg-success">배경색 bg-success</h3>
+                <h3 class="bg-info">배경색 bg-info</h3>
+                <h3 class="bg-warning">배경색 bg-warning</h3>
+                <h3 class="bg-danger">배경색 bg-danger</h3>
+                <h3 class="bg-white">배경색 bg-white</h3>
+                <h3 class="bg-dark text-white">배경색 bg-dark</h3>
+                <h3 class="bg-light">배경색 bg-light</h3>
+            </article>
+        </section>
+    </body>
+</html>

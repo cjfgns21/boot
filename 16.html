@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+
+        <title>부트스트랩의 카드</title>
+
+
+        <!-- 부트스트랩 로드 시 부트스트랩 CSS 파일을 가장 먼저 로딩하고 -->
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+
+        <!-- JS파일 중 jQuery를 가장 먼저 로딩하고 POPPER 와 BootStrap 파일을 순서대로 로드한다. -->
+        <!-- popper과 bootstrap는 모두 jquery를 사용하여 각종 기능을 수행하기 때문에 반드시
+        jquery가 가장 먼저 로드되어야 한다. -->
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="container">
+            <!-- 부트스트랩에서 카드란 컨텐츠 주변에 약간의 패딩 및 테두리 선이 있는 상자임(프로필 사진 및 설명시 주로 사용) -->
+            <!-- 한글 워드프로세서 프로그램의 글상자 기능과 비슷함 -->
+
+            <article>
+                <h3>카드 기본형 사용</h3>
+                <div class="card">
+                    <div class="card-body">기본형 카드</div>
+                </div>
+            </article><hr>
+            <article>
+                <!-- card는 header, body, footer로 구분되어 있어 필요한 부분에 필요한 컨텐츠를 구분하여 입력할 수 있음 -->
+
+                <h3>card의 header, body, footer</h3>
+                <div class="card">
+                    <div class="card-header">header 부분</div>
+                    <div class="card-body">body 부분</div>
+                    <div class="card-footer">footer 부분</div>
+                </div>
+                
+            </article><hr>
+            <article>
+                <!-- card도 부트스트랩의 테마 색상 사용 가능 -->
+                <!-- 부트스트랩의 bg-색상 시스템을 사용 -->
+                <!-- bg-primary, bg-secondary, bg-success, bg-info, bg-warning, bg-danger, bg-dark, bg-light -->
+
+                <h3>부트스트랩 테마 색상 사용</h3>
+                <div class="card">
+                    <div class="card-body">기본 색상</div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body">primary 색상</div>
+                </div>
+                <div class="card bg-secondary">
+                    <div class="card-body">secondary 색상</div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body">success 색상</div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-body">info 색상</div>
+                </div>                
+                <div class="card bg-warning">
+                    <div class="card-body">warning 색상</div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body">danger 색상</div>
+                </div>
+                <div class="card bg-dark">
+                    <div class="card-body">dark 색상</div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">light 색상</div>
+                </div>
+            </article><hr>
+            <article>
+                <!-- 카드 내부에서 사용되는 글자 및 링크에 전용 카드 전용 클래스명이 존재함 -->
+
+                <h3>카드의 제목, 텍스트, 링크</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">카드 내부 제목</h4>
+                        <p class="card-text">카드 내부의 컨텐츠 글을 입력할 때 사용</p>
+                        <a href="#" class="card-link">링크1</a>
+                        <a href="#" class="card-link">링크2</a>
+                    </div>
+                </div>
+            </article><hr>
+            <article>
+                <h3>카드에서 이미지 사용하기</h3>
+                <div class="card" style="width: 400px;">
+                    <img src="../img/피치.jpg" alt="" class="card-img-top" style="width: 100%">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">홍길동</h4>
+                        <p class="card-text">사용자에 대한 설명 대충 아무거나</p>
+                        <a href="#" class="btn btn-primary">자세히 보기</a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="card" style="width: 400px;">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">홍길동</h4>
+                        <p class="card-text">사용자에 대한 설명 대충 아무거나</p>
+                        <a href="#" class="btn btn-outline-primary">자세히 보기</a>
+                    </div>
+                    <img src="../img/피치.jpg" alt="" class="card-img-bottom" style="width: 100%">
+                   
+                </div>
+            </article><hr>
+            <article>
+                <!-- 카드의 class 명에 img-fluid를 추가하고 실제 텍스트를 입력할 내부 div의 class명에 card-img-overlay를 입력하여 사용 -->
+                <!-- 이미지와 텍스트가 분리된 형태가 아니라 이미지 위에 텍스트가 올라가 있는 형태로 표시 됨 -->
+                
+                <h3>카드에서 이미지에 오버레이된 텍스트 사용</h3>
+                <div class="card img-fluid" style="width: 400px;">
+                    <img src="../img/피치.jpg" alt="" class="card-img-top" style="width: 100%;">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">홍길동</h4>
+                        <p class="card-text">이미지 위에 텍스트가 오버레이 됩니다.</p>
+                        <a href="#" class="btn btn-primary">자세히 보기</a>
+                    </div>
+                </div>
+
+            </article><hr>
+            <article>
+                <!-- 카드는 기본적으로 block 레벨 태그이므로 한줄에 하나만 입력할 수 있으나 card-columns를 사용하게 되면
+                     한줄에 여러개의 카드를 입력하는 것이 가능함 -->
+                <!-- 카드를 여러개 추가하면 자동적으로 레이아웃이 조절되고, 가로 크기가 576px 미만일 경우 세로로 정렬이 됨 -->
+                <!-- 부모 태그에 div를 선언하고 class명으로 card-columns를 입력한 후 자식 태그로 나머지 카드를 입력 -->
+                <!-- 카드의 정렬 방식은 3 x n으로 가로의 크기는 3칸이 최대이며, 세로의 칸수는 전체 수에 비례하여 정렬함 -->
+                <!-- 가로로 3칸 이상일 경우 다음 줄을 추가하여 정렬 -->
+
+                <h3>카드 column 사용하기</h3>
+                <div class="card-columns">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <p class="card-text">첫번째 카드</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <p class="card-text">두번째 카드</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card bg-success">
+                        <div class="card-body text-center">
+                            <p class="card-text">세번째 카드</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card bg-info">
+                        <div class="card-body text-center">
+                            <p class="card-text">네번째 카드</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card bg-warning">
+                        <div class="card-body text-center">
+                            <p class="card-text">다섯번째 카드</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <p class="card-text">여섯번째 카드</p>
+                        </div>
+                    </div>
+                </div>
+            </article><hr>
+            <article>
+                <!-- deck는 카드의 크기가 가로, 세로가 동일 카드를 생성함 -->
+                <!-- deck는 한줄에 카드를 계속 나열하는 방식으로 추가함 -->
+                <!-- 생성된 카드의 가로, 세로의 크기는 동일함 -->
+                <!-- 화면의 크기가 576px 미만이 되면 세로로 정렬 -->
+
+                <h3>카드 deck 사용하기</h3>
+                <div class="card-deck">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <p class="card-text">첫번째 카드</p>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                            <div class="card-body text-center">
+                                <p class="card-text">두번째 카드</p>
+                            </div>
+                        </div>
+                        <div class="card bg-success">
+                                <div class="card-body text-center">
+                                    <p class="card-text">세번째 카드</p>
+                                </div>
+                            </div>
+                            <div class="card bg-info">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">네번째 카드</p>
+                                    </div>
+                                </div>
+                                <div class="card bg-primary">
+                                        <div class="card-body text-center">
+                                            <p class="card-text">첫번째 카드</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-primary">
+                                            <div class="card-body text-center">
+                                                <p class="card-text">첫번째 카드</p>
+                                            </div>
+                                        </div>
+                </div>
+            </article><hr>
+            <article>
+                <!-- 기본적으로 card-deck과 기능이 동일하지만 카드의 좌우 여백을 삭제함 -->
+                <!-- card-deck와 동일하게 카드의 수와 상관없이 한줄에 모든 카드를 나열함 -->
+
+                <h3>카드 group 사용하기</h3>
+                <div class="card-group">
+                        <div class="card bg-primary">
+                            <div class="card-body text-center">
+                                <p class="card-text">첫번째 카드</p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary">
+                                <div class="card-body text-center">
+                                    <p class="card-text">두번째 카드</p>
+                                </div>
+                            </div>
+                            <div class="card bg-success">
+                                    <div class="card-body text-center">
+                                        <p class="card-text">세번째 카드</p>
+                                    </div>
+                                </div>
+                                <div class="card bg-info">
+                                        <div class="card-body text-center">
+                                            <p class="card-text">네번째 카드</p>
+                                        </div>
+                                        </div>
+                                        <div class="card bg-primary">
+                                                <div class="card-body text-center">
+                                                    <p class="card-text">첫번째 카드</p>
+                                                </div>
+                                            </div>
+                                            <div class="card bg-secondary">
+                                                    <div class="card-body text-center">
+                                                        <p class="card-text">두번째 카드</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card bg-success">
+                                                        <div class="card-body text-center">
+                                                            <p class="card-text">세번째 카드</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card bg-info">
+                                                            <div class="card-body text-center">
+                                                                <p class="card-text">네번째 카드</p>
+                                                            </div>
+                                                            
+                                        
+
+            </article><hr>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

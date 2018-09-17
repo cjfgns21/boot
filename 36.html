@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+
+        <title>부트스트랩 princing</title>
+
+
+        <!-- 부트스트랩 로드 시 부트스트랩 CSS 파일을 가장 먼저 로딩하고 -->
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+
+        <!-- JS파일 중 jQuery를 가장 먼저 로딩하고 POPPER 와 BootStrap 파일을 순서대로 로드한다. -->
+        <!-- popper과 bootstrap는 모두 jquery를 사용하여 각종 기능을 수행하기 때문에 반드시
+        jquery가 가장 먼저 로드되어야 한다. -->
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+        
+           footer p {
+               font-weight: bold;
+           }
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <a href="#" class="navbar-brand">Company name</a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Enterprise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-outline-primary">Sign up</button>
+            </nav>
+        </header>
+        <hr>
+
+        <main style="margin:auto 500px;">
+
+            <div class="container text-center mt-5">
+                <h1>Pricing</h1>
+                <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example.<br>
+                   It's built with default Bootstrap components and utilities with little customization.</p>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-4 text-center">
+                    <div class="card">
+                        <div class="card-header"><span style="font-weight:bold;">Free</span></div>
+                        <div class="card-body">
+                            <h4 class="card-title">$4 <span class="text-muted">/ mo</span></h4>
+                            <ul class="list-unstyled card-text">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button class="btn btn-lg btn-outline-primary">Sign ip for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="card">
+                        <div class="card-header"><span style="font-weight:bold;">Pro</span></div>
+                        <div class="card-body">
+                            <h4 class="card-title">$15 <span class="text-muted">/ mo</span></h4>
+                            <ul class="list-unstyled card-text">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-primary">Sign ip for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="card">
+                        <div class="card-header"><span style="font-weight:bold;">Enterprise</span></div>
+                        <div class="card-body">
+                            <h4 class="card-title">$29 <span class="text-muted">/ mo</span></h4>
+                            <ul class="list-unstyled card-text">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-primary">Sign ip for free</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </main>
+
+        <footer style="margin:auto 500px;">
+            <div class="row text-left">
+                <div class="col-sm-3 mt-3">
+                    <img src="../img/dot.png" width="24px;" height="24px;">
+                    <p>© 2017-2018</p>
+                </div>
+                <div class="col-sm-3 mt-3">
+                    <p>Features</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Cool stuff</a></li>
+                        <li><a href="#" class="text-muted">Random feature</a></li>
+                        <li><a href="#" class="text-muted">Team feature</a></li>
+                        <li><a href="#" class="text-muted">Stuff for developers</a></li>
+                        <li><a href="#" class="text-muted">Another one</a></li>
+                        <li><a href="#" class="text-muted">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 mt-3">
+                    <p>Resources</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Resource</a></li>
+                        <li><a href="#" class="text-muted">Resource name</a></li>
+                        <li><a href="#" class="text-muted">Another resourcee</a></li>
+                        <li><a href="#" class="text-muted">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 mt-3">
+                    <p>About</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Team</a></li>
+                        <li><a href="#" class="text-muted">Locations</a></li>
+                        <li><a href="#" class="text-muted">Privacy</a></li>
+                        <li><a href="#" class="text-muted">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+
+        <title>부트스트랩 로그인 화면</title>
+
+
+        <!-- 부트스트랩 로드 시 부트스트랩 CSS 파일을 가장 먼저 로딩하고 -->
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+
+        <!-- JS파일 중 jQuery를 가장 먼저 로딩하고 POPPER 와 BootStrap 파일을 순서대로 로드한다. -->
+        <!-- popper과 bootstrap는 모두 jquery를 사용하여 각종 기능을 수행하기 때문에 반드시
+        jquery가 가장 먼저 로드되어야 한다. -->
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+        
+        
+        </style>
+
+    </head>
+    <body>
+        <header style="margin:150px;"></header>
+        <main class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img src="../img/피치.jpg" style="width: 100px; height: 80px;">
+                    </div>
+                    <br><br>
+                    <h2 class="text-center">로그인</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="아이디를 입력하세요">
+                            <input type="text" class="form-control" placeholder="비밀번호를 입력하세요">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">기억하기
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block">로그인</button>
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </main>
+    </body>
+</html>

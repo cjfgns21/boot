@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+
+        <title>부트스트랩을 이용한 문제</title>
+
+
+        <!-- 부트스트랩 로드 시 부트스트랩 CSS 파일을 가장 먼저 로딩하고 -->
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+
+        <!-- JS파일 중 jQuery를 가장 먼저 로딩하고 POPPER 와 BootStrap 파일을 순서대로 로드한다. -->
+        <!-- popper과 bootstrap는 모두 jquery를 사용하여 각종 기능을 수행하기 때문에 반드시
+        jquery가 가장 먼저 로드되어야 한다. -->
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+    </head>
+    <body>
+        <!-- 부트스트랩을 이용하여 간단한 게시판 UI를 만드세요 -->
+        <!-- 1. 테이블 생성시 번호, 제목, 글쓴이, 날짜, 조회, 추천 항목을 입력 -->
+        <!-- 2. 글의 수는 10개 내외 -->
+        <!-- 3. 게시글 제목 뒤에 댓글 수 입력(badge 사용) -->
+        <!-- 4. 게시판 아래에 목록, 글쓰기, 수정, 삭제, 뒤로 가기 버튼 추가(각기 다른 색상 사용) -->
+        <!-- 5. 버튼은 우측 아래쪽에 있어야 함 -->
+
+        <section class="container">
+            <h1 class="text-center">해외축구 갤러리</h1><br>
+            <article>
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                            <th>추천</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>손흥민 군대가자<span class="badge">(512)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>28</td>
+                            <td>125</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>??? : 이병 손흥민!!<span class="badge">(552)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>28</td>
+                            <td>1225</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>??? : 형 오늘 왜이리 열심히 해요?<span class="badge">(712)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>85</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>손흥민 훈련병 뺑끼 부리지 않습니다.<span class="badge">(52)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>234</td>
+                            <td>925</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>손흥민 계속 밍기적 거릴래?!<span class="badge">(12)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>75</td>
+                            <td>825</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>손흥민! 수비나 서 임마<span class="badge">(452)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>56</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>베트남한테도 개발리는 클라스~~ㅋㅋㅋㅋ<span class="badge">(322)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>24</td>
+                            <td>125</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>??? : "손흥민, 맨유에서 애초에 관심도 없었다."<span class="badge">(1121)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>83</td>
+                            <td>165</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>토트넘, "손, 아쉽지만 우리에겐 라멜라가 있다."<span class="badge">(2)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>13</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>베트남, 현재 박항서 매직에 열광의 도가니!!<span class="badge">(5)</span></td>
+                            <td>이승우</td>
+                            <td>2018-08-29</td>
+                            <td>457</td>
+                            <td>725</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article><br>
+            <article>
+                    
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="#" class="page-link">이전페이지</a>
+                        </li>
+                        <li class="page-item active">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">다음페이지</a>
+                        </li>
+                    </ul>
+                </article>
+            <article>
+                
+                    <div class="text-right">
+                        <button class="btn btn-primary">목록</button>
+                        <button class="btn btn-primary">글쓰기</button>
+                        <button class="btn btn-success">수정</button>
+                        <button class="btn btn-success">삭제</button>
+                        <button class="btn btn-success">뒤로 가기</button>
+                    </div>
+               
+            </article>
+        </section>
+    </body>
+</html>
